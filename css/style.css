@@ -1,0 +1,392 @@
+body {
+	font-family: "Franklin Gothic", Helvetica, sans-serif;
+	color: #666666;
+	text-shadow: 0 2px 2px #ffffff;
+	font-size: 15px;
+	margin: 0;
+	padding: 0;
+	background-color: #f0f0f0;
+}
+a {
+	color:#666666;
+	text-decoration: none;
+}
+h1, h2, h3, h4 {
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+}
+a.checkbox {
+	display: inline-block;
+	font-size: 15px;
+	background: url(../i/checkbox-no.png) no-repeat left top;
+	background-size: 20px 20px;
+	line-height: 20px;
+	height: 20px;	
+	padding-left: 30px;
+	margin: 10px auto;
+}
+a.checkbox.checked {
+	background-image: url(../i/checkbox.png);
+}
+.view {
+	display: none;
+}
+.view.active {
+	display: block;
+}
+.wrapper {
+	width: 320px;
+	/*height: 548px;	*/
+	margin: auto;
+}
+#logo {
+	width: 150px;
+	height: 110px;
+	background: url(../i/logo.png) no-repeat left top;
+	background-size: cover;
+	margin: 200px auto 20px auto;	
+}
+.login-form {
+	text-align: center;
+	border-bottom: solid 1px #0192d3;
+	padding: 0 20px 15px 20px;
+	display: none;
+}
+label {
+	display: block;
+	line-height: 32px;
+	text-indent: 16px;
+	text-align: left;
+}
+.input-wrapper {
+	padding: 0 16px;
+	background: url(../i/input-right.png) no-repeat right top;
+	background-size: 16px 30px;	
+	position: relative;
+}
+.input-wrapper i {
+	width: 16px;
+	height: 30px;
+	background: url(../i/input-left.png) no-repeat right top;
+	background-size: 16px 30px;	
+	position: absolute;
+	top: 0;
+	left: 0;	
+}
+input {
+	-webkit-appearance: none;
+    border-radius: 0;
+	height: 30px;
+	background: url(../i/input-middle.png) repeat-x left top;
+	background-size: 100% 100%;
+	border: solid 0px #f0f0f0;
+	width: 100%;
+	padding: 0;
+	font-size: 15px;
+	font-family: "Franklin Gothic", Helvetica, sans-serif;
+	color: #666666;
+	text-shadow: 0 2px 2px #ffffff; 
+}
+.input-wrapper.error {
+	border: solid 1px #d92a39;
+	border-radius: 16px;
+}
+.keep-signin {
+	text-align: center;
+}
+.button {
+	height: 37px;
+	padding: 0 18px;
+	background: url(../i/button-right.png) no-repeat right top;
+	background-size: 18px 37px;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+.button>i {
+	width: 18px;
+	height: 37px;
+	background: url(../i/button-left.png) no-repeat left top;
+	background-size: cover;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.button span {
+	background: url(../i/button-middle.png) repeat-x left top;
+	display: block;
+	height: 37px;
+	line-height: 37px;
+	background-size: 100% 100%;
+	font-size: 15px;
+}
+.button:hover, .button:active {
+	color: #0192d3;
+}
+.guest {
+	border-top: solid 1px #ffffff;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	display: none;
+}
+/****************App View My United************************/
+.tabs {
+	background: url(../i/tab-bg.png) no-repeat left top;
+	background-size: cover;
+	padding: 4px;
+	width: 280px;
+	height: 30px;
+	margin: 10px 16px;
+	line-height: 30px;
+	font-size: 15px;
+}
+.tabs div {
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	background-size: cover;
+}
+.tabs div:hover {
+	color: #0192d3;
+}
+.tabs .tab-left {
+	width: 95px;
+	border-right: solid 1px #cacaca;
+}
+.tabs .tab-left.active {
+	background-image: url(../i/tab-left-select.png);
+	color: #0192d3;
+}
+.tabs .tab-middle {
+	border-left: solid 1px #ffffff;
+	width: 92px;
+	border-right: solid 1px #cacaca;
+}
+.tabs .tab-middle.active {
+	background-image: url(../i/tab-middle-select.png);
+	color: #0192d3;
+}
+.tabs .tab-right {
+	border-left: solid 1px #ffffff;
+	width: 89px;
+}
+.tabs .tab-right.active {
+	background-image: url(../i/tab-right-select.png);
+	color: #0192d3;
+}
+.panel {
+	background: url(../i/panel-bottom.png) no-repeat left bottom;
+	background-size: 320px 30px;
+
+	width: 320px;
+	height: auto;
+
+	position: absolute;
+	z-index: 99999;
+	bottom:0;
+    top:0;
+    margin-bottom: 10px;
+	margin-top: 58px;
+	padding: 30px 0;
+}
+.panel>i{
+	background: url(../i/panel-top.png) no-repeat left top;
+	background-size: 320px 30px;
+	width: 320px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+.panel .panelbg {
+	width: 100%;
+	height: 100%;
+	background: url(../i/panel-middle.png) repeat-y left top;
+	background-size: 320px;
+}
+.panel .list-view {
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	top: 6px;
+	bottom: 10px;
+	border-radius: 15px;
+	overflow: hidden;
+	display: none;
+}
+.list-view.as-guest {
+	display: block;
+}
+.user-access .list-view.as-guest {
+	display: none;
+}
+.list-view.signed-in {
+	display: none;
+}
+.user-access .list-view.signed-in {
+	display: block;
+}
+.list-view>.list-view-content>h1 {
+	line-height: 30px;
+	text-indent: 16px;
+	font-size: 15px;
+	border-bottom: solid 1px #0192d3;
+}
+.list-view .list-item {
+	border-top: solid 1px #ffffff;
+	font-style: italic;
+	text-indent: 16px;
+	font-size: 13px;
+	line-height: 30px;
+	min-height: 30px;
+	border-radius: 0 0 15px 15px;
+	background: #f0f0f0; /* Old browsers */
+	background: -moz-linear-gradient(top, #f0f0f0 0%, #e9e9e9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f0f0), color-stop(100%,#e9e9e9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f0f0f0 0%,#e9e9e9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f0f0f0 0%,#e9e9e9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f0f0f0 0%,#e9e9e9 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #f0f0f0 0%,#e9e9e9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#e9e9e9',GradientType=0 ); /* IE6-9 */
+}
+.list-view-content {
+	border-radius: 15px;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+.list-view form {
+	margin: 10px;
+	text-align: center;
+}
+.boarding-pass {
+	background: url(../i/boarding-pass.png) no-repeat left top;
+	background-size: 280px;
+	width: 280px;
+	height: 139px;
+	padding-bottom: 10px;
+	margin: 10px auto 0 auto;
+}
+.tabWrapper {
+	display: none;
+}
+.tabWrapper.active {
+	display: block;
+}
+
+.sqr-button {
+	width: 140px;
+	height: 140px;
+	background: url(../i/sqr-button.png) no-repeat left top;
+	background-size: 140px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.sqr-button a{
+	display: block;
+	width: 140px;
+	height: 35px;
+	background-size: 140px;
+	padding-top: 105px;
+	line-height: 30px;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.sqr-button a:hover{
+	background-position: left bottom;
+	color: #0192d3;
+}
+.tabWrapper#tab-united {
+	margin-left: 15px;
+	margin-top: 1px;
+}
+.tabWrapper#tab-more {
+	width: 305px;
+	height: auto;
+
+	position: absolute;
+	z-index: 99999;
+	bottom:0;
+    top:0;
+	margin-left: 15px;
+    margin-bottom: 10px;
+	margin-top: 58px;
+}
+#flight {
+	background-image: url(../i/flight.png);
+}
+#checkin {
+	background-image: url(../i/checkin.png);
+}
+#status {
+	background-image: url(../i/status.png);
+}
+#club {
+	background-image: url(../i/club.png);
+}
+#tool {
+	background-image: url(../i/tool.png);
+}
+#share {
+	background-image: url(../i/share.png);
+}
+#game {
+	background-image: url(../i/game.png);
+}
+#contact {
+	background-image: url(../i/contact.png);
+}
+.info-button {
+	background: url(../i/info.png) no-repeat left top;
+	background-size: 55px;
+	/*position: absolute;
+	bottom: 20px;
+	left: -5px;*/
+	font-style: italic;
+	height: 55px;
+	line-height: 55px;
+	text-indent: 55px;
+	cursor: pointer;
+	float: left;
+	margin-left: -10px;
+}
+.info-button:hover {
+	background: url(../i/info.png) no-repeat left bottom;
+	background-size: 55px;
+}
+.user {
+	float: left;
+	width: 100%;
+	margin-top: 3px;
+}
+.user .profile-pic {
+
+	width: 90px;
+	height: 77px;
+	background: url(../i/profile-pic.png) no-repeat left top;
+	background-size: 90px;
+	float: left;
+}
+.user .profile-info {
+	float: left;
+}
+.user .profile-info h1 {
+	font-size: 18px;
+	margin: 18px 0 0 0;
+}
+.user .profile-info .info span {
+	font-size: 9px;
+	text-transform: uppercase;
+}
+.user .profile-info .info strong {
+	font-size: 18px;
+	color: #0192d3;
+	font-weight: normal;
+	margin-right: 12px;
+}

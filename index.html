@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>United Airline Mobile</title>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+<link rel="shortcut icon" href="i/favicon.ico" />
+<link rel="apple-touch-icon-precomposed" href="i/apple-touch-icon.png" />
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body >
+<div class="wrapper">
+	<div class="view active" id="login">
+    	<div id="logo"></div>
+        <div class="login-form">
+        	<form>
+            	<label>Username:</label>
+                <div class="input-wrapper"><i></i><input name="username" type="text" placeholder="Type here the username"></div>
+            	<label>Password:</label>
+                <div class="input-wrapper"><i></i><input name="password" type="password" placeholder="Type here the password"></div>
+                <div class="keep-signin"><a href="#" class="checkbox">Keep me signed in</a></div>
+                <a href="#" class="button" id="sign-in-button"><i></i><span>Sign in</span></a>
+            </form>
+        </div>
+        <div class="guest">
+            <a href="#" class="button" id="continue-guest-button"><i></i><span>Continue as Guest</span></a>
+        </div>
+    </div>
+    <div class="view" id="app">
+    	<div class="tabs">
+    		<div class="tab-left" id="tab-united">United</div>
+    		<div class="tab-middle active" id="tab-my">My United</div>
+    		<div class="tab-right" id="tab-more">More</div>
+    	</div>
+        <div class="tabWrapper" id="tab-united">
+            <div class="sqr-button"><a href="#" id="flight">Book Flight</a></div>
+            <div class="sqr-button"><a href="#" id="checkin">Check in</a></div>
+            <div class="sqr-button"><a href="#" id="status">Flight Status</a></div>
+            <div class="sqr-button"><a href="#" id="club">United Clubs</a></div>
+        </div>
+    	<div class="panel tabWrapper active" id="tab-my">
+    		<i></i>
+    		<div class="panelbg">
+            </div>	
+            <div class="list-view signed-in" id="myUnited">
+                <div class="list-view-content">
+                    <div class="user">
+                        <div class="profile-pic"></div>
+                        <div class="profile-info">
+                            <h1>Alice Lee</h1>
+                            <div class="info">
+                                <span>boarding pass</span>
+                                <strong>1</strong>
+                                <span>miles</span>
+                                <strong>9999</strong> 
+                            </div>
+                        </div>
+
+                    </div>
+                    <h1>Mobile Boarding Pass</h1>
+                    <div class="list-item">
+                        <div class="boarding-pass">
+                            
+                        </div>
+                    </div>
+                    <h1>Reservations</h1>
+                    <div class="list-item">You have no reservation</div>
+                    <h1>Flight Status Push Notifications</h1>
+                    <div class="list-item">You have no alerts, tap to add one</div>
+                    <h1>United Club Passes</h1>
+                    <div class="list-item">You have no passes, tap to add one</div>
+                </div>
+            </div>
+            <div class="list-view as-guest" id="myUnited-guest">
+                <div class="list-view-content">
+                    <h1>Sign in to view your passes and more</h1>
+                    <form>
+                        <label>Username:</label>
+                        <div class="input-wrapper"><i></i><input name="username" type="text" placeholder="Type here the username"></div>
+                        <label>Password:</label>
+                        <div class="input-wrapper"><i></i><input name="password" type="password" placeholder="Type here the password"></div>
+                        <div class="keep-signin"><a href="#" class="checkbox">Keep me signed in</a></div>
+                        <a href="#" class="button" id="my-sign-in-button"><i></i><span>Sign in</span></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="tabWrapper" id="tab-more">
+            <div class="sqr-button"><a href="#" id="tool">Travel Tools</a></div>
+            <div class="sqr-button"><a href="#" id="share">Social Share</a></div>
+            <div class="sqr-button"><a href="#" id="game">Game</a></div>
+            <div class="sqr-button"><a href="#" id="contact">Contact Us</a></div>
+            <div class="info-button">information and privacy policy</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
